@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 1</title>
+</head>
+<body>
+
+<p><strong>Lorem ipsum dolor sit amet</strong>, <s>consectetur adipisicing elit</s>. Consequatur consequuntur dolore itaque nisi, pariatur quasi
+    sint totam? <em>Accusamus animi aut cumque delectus</em>, <u>ea exercitationem impedit laboriosam minus, optio repellendus
+    voluptates?</u></p>
+
+<p align="right">Aut blanditiis culpa dignissimos dolor dolore dolores et eum exercitationem explicabo inventore iure minima minus
+    molestias, nisi omnis quam quo quos rem repellendus sapiente suscipit veritatis voluptates voluptatum. Deserunt,
+    optio?</p>
+
+<p align="center">Aliquid distinctio ducimus eum nostrum ratione soluta, temporibus! Blanditiis cum deleniti dignissimos ducimus eum
+    eveniet facilis fugiat fugit maxime mollitia non obcaecati quam quidem quisquam sapiente sint, unde vel
+    voluptatibus?</p>
+
+<p align="justify">Debitis deleniti dolore, doloremque doloribus ea earum eos esse facere harum illo magnam molestiae odit perspiciatis
+    quae qui quisquam <>recusandae repellat sunt tempora totam. Doloribus impedit iure nemo sequi similique.</p>
+
+</body>
+<!--Made by serhiitolstoi. King of the Indians-->
+</html>
