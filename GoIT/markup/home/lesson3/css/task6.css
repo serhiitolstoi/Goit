@@ -1,17 +1,16 @@
-.red {
-    background-color: red;
-    
+input[type="checkbox"] {
+    display: none;
 }
 
-.green {
-    background-color: green;
-
+label {
+    margin: 15px;
+    text-decoration: underline;
 }
 
-.blue {
-    background-color: blue;
+label[for*=red] {color: red;}
+label[for*=blue] {color: blue;}
+label[for*=green] {color: green;}
 
-}
 
 span {
     color: white;
@@ -19,6 +18,27 @@ span {
     padding: 5px;
 }
 
-label[red]:link {
+.red {background-color: red; }
+.green {background-color: green;}
+.blue {background-color: blue;}
 
+span {
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#red:checked ~ span[class="red"],
+#green:checked ~ span[class="green"],
+#blue:checked ~ span[class="blue"]
+{
+    display: none;
+}
+
+
+#red:checked ~ label[for="red"],
+#green:checked ~ label[for="green"],
+#blue:checked ~ label[for="blue"]
+{
+    opacity: 0.3;
 }
