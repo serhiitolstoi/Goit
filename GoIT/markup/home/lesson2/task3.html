@@ -9,19 +9,19 @@
 <h1>Task3 - Формы</h1>
 
 <form action="#" method="post">
-    Name <br/>
-    <input type="text" name="login"/> <br/> <br/>
-    Email <br/>
-    <input type="email" name="email"/> <br/> <br/>
+    <label for="login_form">Name</label> <br/>
+    <input type="text" name="login" id="login_form"/> <br/> <br/>
+    <label for="email_form">Email</label> <br/>
+    <input type="email" name="email" id="email_form"/> <br/> <br/>
 
     Sex <br/>
-    <input type="radio" name="sex" value="male">Male</input>
-    <input type="radio" name="sex" value="female">Female</input> <br/> <br/>
+    <input type="radio" name="sex" value="male" id="male_radiobutton"><label for="male_radiobutton">Male</label></input>
+    <input type="radio" name="sex" value="female" id="female_radiobutton"><label for="female_radiobutton">Female</label></input> <br/> <br/>
 
     Current status <br/>
-    <input type="checkbox" name="status">Student</input>  <br/>
-    <input type="checkbox" name="status">Employed</input>  <br/>
-    <input type="checkbox" name="status">Unemployed</input>  <br/> <br/>
+    <input type="checkbox" name="status" id="student"><label for="student">Student</label></input>  <br/>
+    <input type="checkbox" name="status" id="employed"><label for="employed">Employed</label></input>  <br/>
+    <input type="checkbox" name="status" id="unemployed"><label for="unemployed">Unemployed</label></input>  <br/> <br/>
 
     Month and Year of birth <br/>
     <select name="month" id="registration_form_month">
@@ -55,9 +55,9 @@ Soft Skills
     <input type="file" name="photo"/> <br/> <br/>
     
     Comments <br/>
-    <textarea name="" id="" cols="28" rows="4"></textarea>
+    <textarea name="" id="" cols="28" rows="4"></textarea> <br/>
 
-
+    <input type="submit" value="Save"/>
 
 </form>
 
