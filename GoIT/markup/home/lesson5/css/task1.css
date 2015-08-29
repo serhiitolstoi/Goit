@@ -1,10 +1,11 @@
 nav {
+    position: relative;
     background-color: deepskyblue;
     text-align: center;
+    width: 100%;
 }
 
 .top-menu {
-    position: relative;
     width: 900px;
     display: inline-block;
     margin: 0;
@@ -36,9 +37,9 @@ li a {color: white;
     position: absolute;
     display: none;
     text-align: center;
-    width: 100%;
-    top: 30px; right: 0; left:0;
-    box-shadow: 0px 1px 0px gray;
+    width: 97%;
+    top: 30px; left:0; right: 0;
+    box-shadow: 0 1px 0 gray;
     background-color: lightgray;
 }
 

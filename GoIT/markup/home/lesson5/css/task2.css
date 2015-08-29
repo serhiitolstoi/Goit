@@ -1,65 +1,72 @@
 .container_for_packages {
     position: relative;
-    width: 250px;
-    height: 429px;
-    background-color: darkorange;
-    box-shadow: 0 0 5px 0 grey;
+    width: 290px;
+    height: 470px;
+    background-color: #ee8129;
+    box-shadow: 0 0 10px 0 gray;
     border-radius: 5px;
 }
 
 .packages {
     position: absolute;
+    left: 0; right: 0;
     box-sizing: border-box;
-    width: 250px;
-    height: 375px;
-    margin: auto;
-    border: 2px solid darkorange;
+    width: 282px;
+    height: 396px;
+    margin:auto;
     background-color: white;
 }
 
 header {
     text-align: center;
-    padding: 15px;
+    padding: 23px;
     color: white;
-    font-size: 20px;
+    font: bold 24px/24px "Trebuchet MS", sans-serif;
 }
 
-h3,p {
+h3 {
     text-align: center;
+    color: #3f4042;
+    font: 24px/24px "Trebuchet MS", sans-serif;
 }
 
 p {
     margin: 0;
-    padding: 0;
-    font-size: 56px;
-    font-weight: bold;
+    padding-bottom: 10px;
+    font: bold 72px/72px "Trebuchet MS", sans-serif;
+    text-align: center;
+    color: #35495a;
+
 }
 
 p:before {
     position: relative;
     content: "$";
-    font-size: 18px;
-    top: -28px;
-    right: 5px;
+    font: bold 24px "Trebuchet MS", sans-serif;
+    top: -38px;
+    right: 2px;
 }
 
 p:after {
     position: relative;
     content: "Monthly";
-    font-size: 18px;
+    font: 18px "Trebuchet MS", sans-serif;
     top: 5px;
     right: 0;
 }
 
 ul li {
     position: relative;
+    left: 0;
+    right: 0;
     box-sizing: border-box;
     list-style: none;
+    font: 15px "Trebuchet MS", sans-serif;
+    color: #8f939b;
     padding: 10px;
-    width: 220px;
-    margin-left: -25px;
-    color: gray;
-
+    width: 250px;
+    margin-left: -24px;
+    border-bottom: 1px solid white;
 }
 
 ul li:nth-child(even) {
@@ -81,19 +88,25 @@ li:before {
 
 
 .button {
-    position: absolute;
+    position: relative;
     box-sizing: border-box;
-    text-align: center;
-    bottom: 20px;  right: 15px; left: 15px;
-    width: 220px;
-    background-color: darkorange;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 250px;
+    background-color: #ee8129;
     border-radius: 3px;
-    box-shadow: 0 2px 0 lightgray;
-    font: 14px bold;
+    box-shadow: 0 2px 0 #b3560b;
+    font: bold 14px/14px "Trebuchet MS", sans-serif;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
     padding: 10px 5px;
+    text-decoration: none;
 }
 
-.button a {
-    text-decoration: none;
-    color: white;
+.button:hover {
+    cursor: pointer;
+    background-color: #b3560b;
 }
