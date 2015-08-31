@@ -1,0 +1,56 @@
+.zorkiy_sokol_table {
+    position: relative;
+    width: 400px;
+    text-align: justify;
+    font: 90px/90px arial, sans-serif;
+    line-height: 8px;
+    color: rgba(0,0,0,0);
+    text-shadow: 0 0 3px #555555;
+}
+
+p:after {
+    display: inline-block;
+    content: "";
+    width: 100%;
+}
+hr {
+    position: absolute;
+    width: 400px;
+    bottom: 10px;
+    opacity: 0.2;
+    border-bottom: 2px solid #dd3838;
+}
+
+.line02 {
+    font-size: calc(1em - 1em/12);
+}
+.line03 {
+    font-size: calc(1em - 2em/12);
+}
+.line04 {
+    font-size: calc(1em - 3em/12);
+}
+.line05 {
+    font-size: calc(1em - 4em/12);
+}
+.line06 {
+    font-size: calc(1em - 5em/12)
+}
+.line07 {
+    font-size: calc(1em - 6em/12)
+}
+.line08 {
+    font-size: calc(1em - 7.5em/12);
+}
+.line09 {
+    font-size: calc(1em - 9em/12);
+}
+.line10 {
+    font-size: calc(1em - 10em/12);
+}
+.line11 {
+    font-size: calc(1em - 10.5em/12);
+}
+.line12 {
+    font-size: calc(1em - 11em/12);
+}
