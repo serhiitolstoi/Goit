@@ -1,5 +1,5 @@
 #wrapper {
-    min-width: 720px;
+    width: 1400px;
     margin: 0;
     padding: 0;
 }
@@ -7,19 +7,27 @@
 
 
 /* ----- Header ----- */
+.container {
+    position: relative;
+    width: 1025px;
+    height: 90px;
+    margin: 0 auto;
+}
+
 .logo {
     position: absolute;
     top: 35px;
-    left: 185px;
+    left: 0;
 }
 
 .top_menu {
-    list-style: none;
-    float: right;
-    margin: 45px 80px 0 0;
+    position: absolute;
+    right: -15px;
+    top: 30px;
 }
 
 .top_menu li {
+    list-style: none;
     display: inline-block;
     padding: 0 0 35px 0;
 }
@@ -46,37 +54,46 @@
 
 /* ----- Home ----- */
 #home {
-    position: absolute;
-    top:110px;
-    left:0;
+    position: relative;
+    top:12px;
     margin: auto;
     width: 100%;
     height: 585px;
 
-    background-image: url("../img/bg.jpg");
-    background-repeat: no-repeat;
+    background: url("../img/bg.jpg") no-repeat center;
     background-size: cover;
     text-align: center;
     color: #fff;
 }
 
+.container_home {
+    position: relative;
+    top: 155px;
+    width: 875px;
+    margin: 0 auto;
+}
+
+#home .intro_to_h1 {
+    font: 36px/36px "Times New Roman", serif;
+    text-transform: none;
+    margin: 0 auto -10px;
+}
+
 #home h1 {
     font: 48px/48px "Times New Roman", serif;
     text-transform: uppercase;
-    margin-top: 155px;
+    margin: 11px;
     line-height: 1.2em;
 }
-#home h1 span {
-    font: 36px/36px "Times New Roman", serif;
-    text-transform: none;
-}
 
-#home p {
-    margin-top: -12px;
+
+#home .after_h1 {
     font: italic 20px/20px Calibri, sans-serif;
+    width: 575px;
+    margin: 20px auto -5px;
 }
 
-#home button {
+#home .btn {
     margin-top: 45px;
     padding: 20px 60px;
     font: 16px/16px "Times New Roman", serif;
@@ -85,14 +102,280 @@
     text-transform: uppercase;
 }
 
-#home button:hover {
-    background-color: #fff;
-    color: #c1c1c1;
-    opacity: 0.7;
+#home .btn:hover {
+    border: 2px dashed;
     cursor: pointer;
 }
 
+/* ----- About ----- */
+#about {
+    display: none;
+}
+
+/* ----- Portfolio ----- */
+#portfolio {
+    display: none;
+}
 
 /* ----- Pricing ----- */
+#offers {
+    position: relative;
+    width: 870px;
+    height: 650px;
+    margin: 0 auto;
+}
+
+.standart {
+    float: left;
+    width: 33%;
+    border: 1px solid #e8eaec;
+}
+.standart h3 {
+    background-color: #37c2d3;
+    padding: 25px;
+    border-top-left-radius: 5px;
+}
+
+.best_value {
+    position: absolute;
+    left: 286px; top: 120px;
+    width: 34.2%;
+    height: 470px;
+    background-color: #ec8136;
+    box-shadow: 0 0 10px 0 gray;
+    z-index:1;
+}
+.best_value h3 {
+    position: relative;
+    padding: 30.5px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.best_value_inner {
+    background-color: #fff;
+    width: 288px;
+    margin: 0 auto;
+}
+
+.best_value .button a {
+    background-color: #ec8136;
+    box-shadow: 0 2px 0 #b1561b;
+    margin-bottom: 27px;
+}
+.best_value .button a:hover {
+    background-color: #b1561b;
+}
+
+.ultimate {
+    float: right;
+    width: 33%;
+    border: 1px solid #e8eaec;
+}
+.ultimate h3 {
+    background-color: #1cb79a;
+    padding: 25px;
+    border-top-right-radius: 5px;
+}
+
+
+
+
+#offers h2, #offers h3, #offers h4, #offers p, .button {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
+#offers h2 {
+    padding: 50px 0;
+    color: #41525c;
+    font: bold 30px/30px "Trebuchet MS", sans-serif;
+}
+
+#offers h3 {
+    color: #fff;
+    font: bold 24px/24px "Trebuchet MS", sans-serif;
+}
+#offers h4 {
+    color: #3f4042;
+    font: bold 24px/24px "Trebuchet MS", sans-serif;
+    padding: 20px;
+}
+#offers p {
+    color: #364959;
+    font: bold 72px/72px "Trebuchet MS", sans-serif;
+    padding-bottom: 25px;
+}
+
+.standart, .best_value, .ultimate {
+    border-radius: 5px;
+}
+
+.standart p:before, .best_value p:before, .ultimate p:before {
+    content: "$";
+    font: bold 24px/24px "Trebuchet MS", sans-serif;
+    vertical-align: top;
+}
+.standart p:after, .best_value p:after, .ultimate p:after {
+    content: "Monthly";
+    font: 18px/18px "Trebuchet MS", sans-serif;
+    vertical-align: bottom;
+    text-transform: capitalize;
+}
+
+#offers ul {
+    list-style: none;
+    width: 260px;
+    padding: 0;
+    margin: auto;
+    font: 15px/15px "Trebuchet MS", sans-serif;
+    color: #888c94;
+}
+#offers li {
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+}
+#offers li:before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin: 0 16px 0 22px;
+    background: url('../img/list.png') 0 0;
+}
+#offers li:nth-child(even) {
+    background-color: #f5f5f6;
+}
+#offers li:nth-child(odd) {
+    background-color: #eef5fc;
+}
+
+
+.button a {
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 240px;
+    text-decoration: none;
+    font: bold 14px/14px "Trebuchet MS", sans-serif;
+    background-color:#3371a6;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 0 #16436a;
+}
+.button a:hover {
+    cursor: pointer;
+    background-color: #16436a;
+}
+
+/* ----- Testimonials ----- */
+
+#testimonials {
+    position: relative;
+    width: 1400px;
+    height: 315px;
+    background: url("../img/testimonials_bg.jpg") no-repeat ;
+}
+
+#testimonials h2 {
+    margin: 0 auto;
+    padding: 60px 0 50px 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: #3170a8;
+    font: 40px/40px "Trebuchet MS", sans-serif;
+}
+
+.word_decoration {
+    color: #ee8129;
+}
+
+
+.testimonial {
+    width: 500px;
+}
+
+.testimonial_photo {
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+.testimonial_text {
+    float: right;
+    width: 365px;
+    color: white;
+    background-color: #fff;
+    margin: 0 10px 0 0;
+}
+.testimonial_text_header {
+    position: relative;
+    width: 330px;
+    margin: 0 auto;
+    border-bottom: 1px dashed #a0a0a0;
+}
+
+.testimonial_inner {
+    color: #a0a0a0;
+    width: 330px;
+    margin: 11px auto;
+}
+
+.testimonial.first {
+    position: absolute;
+    left:190px; top: 140px;
+}
+
+.testimonial.first:before {
+    content: '';
+    position: absolute;
+    left:110px; top:40px;
+    width: 0;
+    height: 0;
+    border-right: 18px solid #fff;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+}
+
+.testimonial.second {
+    position: absolute;
+    left:730px; top: 140px;
+}
+
+.testimonial.second:before {
+    content: '';
+    position: absolute;
+    left:110px; top:40px;
+    width: 0;
+    height: 0;
+    border-right: 18px solid #fff;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+}
+
+.client_name, .client_type {
+    color: #6594bd;
+    font: italic 13px/13px "Trebuchet MS", sans-serif;
+    border: 1px solid white;
+    margin: 0;
+    padding: 15px 0 10px 0;
+}
+
+.client_name {
+    position: relative;
+}
+.client_type {
+    position: absolute;
+    top: 0; right:0;
+}
+
+
+
+
+
+
+
+
+
 
 
