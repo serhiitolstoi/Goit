@@ -1,0 +1,58 @@
+.container {
+    background-color: #fc6;
+    width: 100%;
+    min-width: 230px;
+    height : 55px;
+    background-image: linear-gradient(#fc6, #e6a930);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    position: relative;
+}
+
+tr input[type="search"] {
+    box-sizing: border-box;
+    height: 25px;
+    margin: 5px 5px 2px;
+    padding: 0;
+}
+
+td input[type="search"] {
+    width: calc(100% - 120px);
+}
+
+td button {
+    width: 65px;
+    height: 25px;
+    position: absolute;
+    top: -1px;
+    right: 3px;
+}
+
+button {
+    min-width: 95px;
+    height: 25px;
+    margin: 7px 20px 0 5px;
+}
+
+input[type="checkbox"] {
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+input[type="checkbox"], label[for="search_item"] {
+    cursor: pointer;
+}
+
+table:after {
+    content: " ";
+        border: 28px solid #fff;
+    border-left: 15px solid transparent;
+    border-right: 0 solid transparent;
+    position: absolute;
+    right: 0;
+    top:0;
+}
+
