@@ -79,7 +79,6 @@ p {
     position: relative;
     width: 360px;
     height: 260px;
-    z-index: 100;
 }
 
 .picture_hover_block {
@@ -88,7 +87,7 @@ p {
     width: 360px;
     height: 260px;
     background-color: rgba(58, 173, 245, .7);
-    z-index: 50;
+    display: none;
 }
 
 .picture_hover_block img {
@@ -98,10 +97,6 @@ p {
     height: 40px;
 }
 
-
-.picture:hover {
-    z-index: 1;
+.image_container:hover .picture_hover_block {
+    display: block;
 }
-
-
-
