@@ -42,6 +42,10 @@ table {
 }
 
 
+body {
+    background-color: #f6f9f9;
+}
+
 
 h1,p {
     text-align: center;
@@ -92,9 +96,13 @@ p {
 
 .picture_hover_block img {
     position: relative;
-    top: calc(50% - 20px);
-    width: 40px;
-    height: 40px;
+    top: 110px;
+    padding: 14px;
+    border: 1px solid #fff;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+
 }
 
 .image_container:hover .picture_hover_block {
@@ -102,33 +110,45 @@ p {
 }
 
 
-.image_preview_container.popup {
+
+.zoom:hover, .link:hover {
+    background: #25a6f7;
+    border-radius: 2px;
+    cursor: pointer;
+
+
+
+}
+
+
+
+.paranja {
     position: fixed;
-    top: 0; left:0; right: 0; bottom: 0;
+    top: 0; left:0;
     background-color: rgba(250, 250, 250, .9);
     width: 100%;
     height: 100%;
 
 }
 
-.image_preview.popup  {
+.image_preview {
     position: fixed;
-    top: 150px; right: 0; left: 0; bottom: 0;
+    top: 200px; right: 0; left: 0; bottom: 0;
     margin: auto;
-    width: 915px;
+    width: 1140px;
     height: 550px;
-    border: 3px solid grey;
+    border: 3px solid #999;
+    border-radius: 2px;
 }
 
 
-.close.popup  {
+.close {
     position: absolute;
     top: -20px; right: 25px;
     width: 40px;
     height: 40px;
-    font: 18px/36px Arial, sans-serif;
-    color: #fff;
-    text-align: center;
-    background-color: orangered;
+    background: #f74c26 url("../img/close.png") 14px 15px no-repeat;
     cursor: pointer;
 }
+
+
