@@ -1,0 +1,274 @@
+/** CSS RESET **/
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p,
+a, abbr, acronym, address,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, details, footer, header,
+menu, nav, section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+ol, ul {
+    list-style: none;
+}
+
+/** CSS RESET END**/
+
+
+body {
+    background-color: #f6f6f6;
+}
+
+.wrapper {
+    width: 975px;
+    margin: 60px 115px;
+    height: 1000px;
+    background-color: #fff;
+    border: 1px solid #ebebeb;
+}
+
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+/** HEADER **/
+.header {
+    width: 925px;
+    margin: 30px 20px 0 30px;
+}
+
+.logo {
+    float: left;
+}
+
+.logo-name {
+    text-decoration: none;
+    font: 40px "Oleo Script", sans-serif;
+    line-height: 1em;
+    color: #222;
+}
+
+.logo-subname {
+    padding-left: 3px;
+    margin-top: 2px;
+    font: 11px Arial, sans-serif;
+    color: #a5a5a5;
+}
+
+
+.menu {
+    float: right;
+    margin-top: 15px;
+}
+.menu li {
+    display: inline-block;
+    margin-left: 55px;
+}
+
+.menu li a {
+    text-decoration: none;
+    font: 14px Oxygen, serif;
+    color: #666;
+
+}
+
+.menu li a:hover {
+    color: #222;
+}
+
+.submenu {
+    display: none;
+    box-sizing: border-box;
+    width: 165px;
+    margin-left: -15px;
+    margin-top: 5px;
+    padding-top: 5px;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius: 2px;
+    border: 1px solid #ddd;
+}
+
+.submenu li {
+    display: block;
+    margin: 0;
+}
+
+.submenu li a {
+    position: relative;
+    display: block;
+    width: 135px;
+    height: 40px;
+    margin-left: 4px;
+    padding: 10px;
+    font: 14px Oxygen, sans-serif;
+    color: #8c8c8c;
+    border-bottom: 1px solid #e3e3e3;
+    line-height: 3em;
+}
+
+
+
+.submenu li a:hover {
+    background-color: #f3f3f3;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius: 5px;
+}
+
+.submenu-subtext {
+    margin-top: -10px;
+    font: 10px Arial, sans-serif;
+    color: #aaa;
+
+}
+
+
+.menu li:hover .submenu {
+    position: absolute;
+    display: block;
+}
+
+/** PREVIEW **/
+
+.preview {
+    position: relative;
+    top: 70px;
+    width: 805px;
+    margin: 0 auto;
+}
+
+.preview-info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 450px;
+    text-align: right;
+}
+
+.preview-info-name {
+    font: bold 38px Oxygen, sans-serif;
+    color: #515151;
+    margin-top: 25px;
+    margin-bottom: 8px;
+}
+
+.preview-info-about {
+    font: 14px Oxygen, sans-serif;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.preview-info .button {
+    position: relative;
+    float: right;
+    width: 170px;
+    height: 45px;
+    background-color: #ffbe47;
+    color: #fff;
+    border: 1px solid #efb74c;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius: 2px;
+    text-align: left;
+    box-shadow: 0 1px 1px #eaeaea;
+}
+
+.preview-info .button:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 13px;
+    top: 12px;
+    background: url("../img/arrow-to-left.png") no-repeat;
+    width: 12px;
+    height: 19px;
+}
+
+.preview-info .button p:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 120px;
+    top: 0;
+    height: 34px;
+    border: 1px solid #ffc75e;
+}
+
+.preview-info .button:hover {
+    cursor: pointer;
+    background-color: #f8a441;
+}
+
+.preview-info .button p {
+    position: absolute;
+    margin: 5px;
+    font: 17px Oxygen, sans-serif;
+}
+
+.btn-video-quality {
+    display: block;
+    text-transform: uppercase;
+    font: bold 10px Arial, sans-serif;
+    color: #d28600;
+    text-shadow: 0 0 1px #fff;
+
+}
+
+
+
+/** CONTENT **/
+.content {
+    position: relative;
+    top:150px;
+    width: 930px;
+    margin: 0 auto;
+}
+
+.content-header {
+    margin: 20px 0;
+    font: 18px Oxygen, sans-serif;
+    color: #222;
+}
+
+.content-block {
+    width: 302px;
+    float: left;
+    margin-right: 12px;
+    overflow: hidden;
+}
+.block3 {
+    margin-right: 0;
+}
+.content-image {
+    border: 1px solid #ddd;
+}
+
+.content-image img{
+    display: block;
+    width: 295px;
+    margin: 2px;
+}
+
+.content-image-description {
+    background: url("../img/text_bg.png") center no-repeat;
+}
+.content-image-header {
+    font: 14px Oxygen, sans-serif;
+    color: #000;
+}
+
+
+
+/** CONTENT_IN_LINE **/
+
+/** FOOTER **/
