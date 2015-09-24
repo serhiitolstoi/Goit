@@ -37,14 +37,22 @@
                 </ul>
             </li>
             <li><a href="#">Help</a></li>
-            <li><a href="#">Apply Now</a></li>
         </ul>
+        <div class="cta-in-header"><a href="#">Apply Now</a></div>
     </div>
+
+
 
     <!-- PREVIEW -->
 
     <div class="preview">
-        <div class="preview-image"><img src="img/spiderman.jpg" alt="Spider Man"/></div>
+        <div class="preview-image-container">
+            <img class="preview-image" src="img/spiderman.jpg" alt="Spider Man"/>
+            <div class="preview-image-slider">
+                <p class="preview-image-slider-text"><span class="preview-image-name">Great Lakehouse with Land</span><br/>
+                    <span class="preview-image-price">from 21K</span><span class="preview-image-place"> - in Texas, USA</span></p>
+            </div>
+        </div>
         <div class="preview-info">
             <h1 class="preview-info-name">The Amazing Spider-Man</h1>
             <p class="preview-info-about">Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit.</p>
@@ -90,33 +98,37 @@
     <!-- CONTENT_IN_LINE -->
 
     <div class="content-in-line">
-        <h2 class="content-in-line-header">Tabbbs get your content in line</h2>
+        <h2 class="content-in-line-header">Ta<span class="emphasized">bbb</span>s get your content in line</h2>
 
         <div class="tabs-container">
             <ul class="tabs">
-                <li class="tabs-item active"><a href="#">Tabbb One</a>
+                <li class="tabs-item"><a href="#">Tabbb One</a>
                     <div class="tab-one-content">
-                        <h5 class="tab-header">You content can be highlighted like this.</h5>
-                        <ul class="tab-list">
-                            <li class="tab-list_item"><a href="#">Magna Porta</a></li>
-                            <li class="tab-list_item"><a href="#">Cras Amet Pharetra</a></li>
-                            <li class="tab-list_item"><a href="#">Ornare Dolor Pharetra</a></li>
-                            <li class="tab-list_item"><a href="#">Nibh Sit Elit</a></li>
-                            <li class="tab-list_item"><a href="#">Venenatis Tortor Aenean</a></li>
-                        </ul>
-                        <div class="tab-visualpart">
-                            <div class="tab-visualpart-container">
-                                <img src="img/house.jpg" alt="house" class="tab-visualpart-img"/>
-                                <h6>Type a Title</h6>
-                                <p>Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet magna.</p>
-                            </div>
+                        <h5 class="tab-header">You content can be <span class="emphasized">highlighted</span> like this.</h5>
+                            <ul class="tab-list">
+                                <li class="tab-list_item"><a href="#">Magna Porta</a></li>
+                                <li class="tab-list_item"><a href="#">Cras Amet Pharetra</a></li>
+                                <li class="tab-list_item"><a href="#">Ornare Dolor Pharetra</a></li>
+                                <li class="tab-list_item"><a href="#">Nibh Sit Elit</a></li>
+                                <li class="tab-list_item"><a href="#">Venenatis Tortor Aenean</a></li>
+                            </ul>
+                            <div class="tab-visualpart">
+                                <div class="tab-visualpart-container">
+                                    <div class="tab-visualpart-img"><img src="img/house.jpg" alt="house"/></div>
+                                    <div class="tab-visualpart-img-description">
+                                        <h6 class="tab-visualpart-img-header">Type a Title</h6>
+                                        <p class="tab-visualpart-img-content">Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet magna.</p>
+                                    </div>
+                                </div>
 
-                            <div class="tab-visualpart-container">
-                                <img src="img/parus.jpg" alt="boat" class="tab-visualpart-img"/>
-                                <h6>Type a Title</h6>
-                                <p>Donec id elit non mi porta gravida at eget metus.</p>
+                                <div class="tab-visualpart-container">
+                                    <div class="tab-visualpart-img"><img src="img/parus.jpg" alt="boat"/></div>
+                                    <div class="tab-visualpart-img-description">
+                                        <h6 class="tab-visualpart-img-header">Type a Title</h6>
+                                        <p class="tab-visualpart-img-content">Donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
                     </div>
                 </li>
 
@@ -133,6 +145,8 @@
                         <p class="tab-text">Some text</p>
                     </div>
                 </li>
+
+                <li class="tabs-item"><a href="#"> </a></li>
             </ul>
 
 
@@ -142,8 +156,43 @@
     </div>
 
     <!-- FOOTER -->
-    <div class="footer">
+    <div class="footer clearfix">
+        <div class="footer-subcontainer single-menu-title">
+            <h6 class="single-menu-title-header">Single menu title</h6>
+            <ul class="single-menu-title-list">
+                <li><a href="#">Condimentum Etiam Purus</a></li>
+                <li><a href="#">Quam Tristique Sem</a></li>
+                <li><a href="#">Fusce Parturient</a></li>
+                <li><a href="#">Fusce Parturient</a></li>
+                <li><a href="#">Magna Parturient Aenean</a></li>
+                <li><a href="#">Tortor Nibh Etiam</a></li>
+            </ul>
+        </div>
 
+        <div class="footer-subcontainer cursus-venenatis-mollis">
+            <h6 class="cursus-venenatis-mollis-header">Cursus venenatis mollis</h6>
+            <ul class="cursus-venenatis-mollis-list">
+                <li><a href="#">Condimentum Etiam Purus</a></li>
+                <li><a href="#">Quam Tristique Sem</a></li>
+                <li><a href="#">Fusce Parturient</a></li>
+                <li><a href="#">Tristique Tortor Condimentum</a></li>
+                <li><a href="#">Magna Parturient Aenean</a></li>
+                <li><a href="#">Cursus Justo Fringilla</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-subcontainer latest-articles">
+            <h6 class="latest-articles-header">Latest articles</h6>
+            <ul class="latest-articles-list">
+                <li><a href="#">Fusce Etiam Bibendum</a></li>
+                <li>Sed posuere consectetur est at lobortis.</li>
+                <li><a href="#">Fusce Parturient</a></li>
+                <li>Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas
+                    eget quam.</li>
+                <li><a href="#">Magna Parturient Aenean</a></li>
+                <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
+            </ul>
+        </div>
 
     </div>
 
