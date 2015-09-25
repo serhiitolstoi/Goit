@@ -70,6 +70,7 @@ body {
     float: right;
     margin-top: 15px;
     margin-right: 140px;
+    z-index: 1;
 
 }
 .menu li {
@@ -99,41 +100,66 @@ body {
     -moz-border-radius:2px;
     border-radius: 2px;
     border: 1px solid #ddd;
+    background-color: #fff;
 }
 
 .submenu li {
     display: block;
-    margin: 0;
+    width: 150px;
+    margin: 0 5px 5px; 
+}
+
+.submenu:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 166px;
+    left: 20px;
+    border: 5px solid transparent; 
+    border-top:  5px solid #e5e5e5;
+}
+.submenu:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 167px;
+    left: 20px;
+    border:  5px solid transparent; 
+    border-top:  5px solid #fff;
 }
 
 .submenu li a {
     position: relative;
     display: block;
-    width: 135px;
-    height: 40px;
-    margin-left: 4px;
-    padding: 10px;
+    padding: 10px 0 10px 5px;
     font: 14px Oxygen, sans-serif;
     color: #8c8c8c;
-    border-bottom: 1px solid #e3e3e3;
-    line-height: 3em;
+    border-top: 1px solid #ddd;
 }
-
 
 
 .submenu li a:hover {
     background-color: #f3f3f3;
-    -webkit-border-radius:5px;
-    -moz-border-radius:5px;
-    border-radius: 5px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius: 3px;
 }
 
-.submenu-subtext {
-    margin-top: -10px;
+.submenu-item1:after {
+    content: "this text is complementary";
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 11px;
     font: 10px Arial, sans-serif;
     color: #aaa;
-
 }
+
+li.submenu-item1 a {
+    border-top: none;
+}
+
+
 
 .menu li:hover .submenu {
     position: absolute;
