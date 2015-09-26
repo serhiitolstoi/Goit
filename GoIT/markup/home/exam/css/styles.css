@@ -106,11 +106,7 @@ body {
 .submenu li {
     display: block;
     width: 150px;
-<<<<<<< HEAD
     margin: 0 5px 5px;
-=======
-    margin: 0 5px 5px; 
->>>>>>> origin/master
 }
 
 .submenu:before {
@@ -119,11 +115,7 @@ body {
     position: absolute;
     bottom: 166px;
     left: 20px;
-<<<<<<< HEAD
     border: 5px solid transparent;
-=======
-    border: 5px solid transparent; 
->>>>>>> origin/master
     border-top:  5px solid #e5e5e5;
 }
 .submenu:after {
@@ -132,11 +124,7 @@ body {
     position: absolute;
     bottom: 167px;
     left: 20px;
-<<<<<<< HEAD
     border:  5px solid transparent;
-=======
-    border:  5px solid transparent; 
->>>>>>> origin/master
     border-top:  5px solid #fff;
 }
 
