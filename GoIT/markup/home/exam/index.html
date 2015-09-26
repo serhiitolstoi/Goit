@@ -21,19 +21,13 @@
         <ul class="menu">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">Products</a>
-                <ul class="submenu">
-                    <li><a href="#">Month subscription</a></li>
-                    <li><a href="#">Year subscription</a></li>
-                    <li><a href="#">Life subscription</a></li>
-                </ul>
-            </li>
+            <li><a href="#">Products</a></li>
             <li><a href="#">Blog</a>
                 <ul class="submenu">
-                    <li><a href="#">Articles <p class="submenu-subtext">this text is complementary</p></a></li>
+                    <li class="submenu-item1"><a href="#">Articles</a></li>
                     <li><a href="#">Writers</a></li>
                     <li><a href="#">Top 50</a></li>
-                    <li><a href="#">The Hall of Fame</a></li>
+                    <li class="submenu-item4"><a href="#">The Hall of Fame</a></li>
                 </ul>
             </li>
             <li><a href="#">Help</a></li>
@@ -66,16 +60,28 @@
 
         <div class="content-container clearfix">
             <div class="content-block block1">
-                <div class="content-image"><img src="img/img-01.jpg" alt="Nature"/></div>
+                <div class="content-image">
+                    <img src="img/img-01.jpg" alt="Nature"/>
+                    <div class="content-image-hover">
+                        <div class="img-icon download"><a href="#"></a></div>
+                        <div class="img-icon zoom"><a href="#"></a></div>
+                        <div class="img-icon look"><a href="#"></a></div>
+                    </div>
+                </div>
                 <div class="content-image-description">
                     <p class="content-image-header">Vehicula Inceptos Pharetra</p>
                     <p class="content-image-text">Aenean eu leo quam. Pellentesque ornare sem lacinia.</p>
                 </div>
                 <p class="content-description">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-
             <div class="content-block block2">
-                <div class="content-image"><img src="img/img-02.jpg" alt="Field"/></div>
+                <div class="content-image"><img src="img/img-02.jpg" alt="Field"/>
+                    <div class="content-image-hover">
+                        <div class="img-icon download"><a href="#"></a></div>
+                        <div class="img-icon zoom"><a href="#"></a></div>
+                        <div class="img-icon look"><a href="#"></a></div>
+                    </div>
+                </div>
                 <div class="content-image-description">
                     <p class="content-image-header">Euismod Pellentesque Egestas Commodo</p>
                     <p class="content-image-text">Cum sociis natoque penatibus et magnis dis parturient.</p>
@@ -84,7 +90,13 @@
             </div>
 
             <div class="content-block block3">
-                <div class="content-image"><img src="img/img-03.jpg" alt="Bird"/></div>
+                <div class="content-image"><img src="img/img-03.jpg" alt="Bird"/>
+                    <div class="content-image-hover">
+                        <div class="img-icon download"><a href="#"></a></div>
+                        <div class="img-icon zoom"><a href="#"></a></div>
+                        <div class="img-icon look"><a href="#"></a></div>
+                    </div>
+                </div>
                 <div class="content-image-description">
                     <p class="content-image-header">Tristique Dapibus</p>
                     <p class="content-image-text">Curabitur blandit tempus porttitor.</p>
@@ -105,30 +117,30 @@
                 <li class="tabs-item"><a href="#">Tabbb One</a>
                     <div class="tab-one-content">
                         <h5 class="tab-header">You content can be <span class="emphasized">highlighted</span> like this.</h5>
-                            <ul class="tab-list">
-                                <li class="tab-list_item"><a href="#">Magna Porta</a></li>
-                                <li class="tab-list_item"><a href="#">Cras Amet Pharetra</a></li>
-                                <li class="tab-list_item"><a href="#">Ornare Dolor Pharetra</a></li>
-                                <li class="tab-list_item"><a href="#">Nibh Sit Elit</a></li>
-                                <li class="tab-list_item"><a href="#">Venenatis Tortor Aenean</a></li>
-                            </ul>
-                            <div class="tab-visualpart">
-                                <div class="tab-visualpart-container">
-                                    <div class="tab-visualpart-img"><img src="img/house.jpg" alt="house"/></div>
-                                    <div class="tab-visualpart-img-description">
-                                        <h6 class="tab-visualpart-img-header">Type a Title</h6>
-                                        <p class="tab-visualpart-img-content">Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet magna.</p>
-                                    </div>
-                                </div>
-
-                                <div class="tab-visualpart-container">
-                                    <div class="tab-visualpart-img"><img src="img/parus.jpg" alt="boat"/></div>
-                                    <div class="tab-visualpart-img-description">
-                                        <h6 class="tab-visualpart-img-header">Type a Title</h6>
-                                        <p class="tab-visualpart-img-content">Donec id elit non mi porta gravida at eget metus.</p>
-                                    </div>
+                        <ul class="tab-list">
+                            <li class="tab-list_item"><a href="#">Magna Porta</a></li>
+                            <li class="tab-list_item"><a href="#">Cras Amet Pharetra</a></li>
+                            <li class="tab-list_item"><a href="#">Ornare Dolor Pharetra</a></li>
+                            <li class="tab-list_item"><a href="#">Nibh Sit Elit</a></li>
+                            <li class="tab-list_item"><a href="#">Venenatis Tortor Aenean</a></li>
+                        </ul>
+                        <div class="tab-visualpart">
+                            <div class="tab-visualpart-container">
+                                <div class="tab-visualpart-img"><img src="img/house.jpg" alt="house"/></div>
+                                <div class="tab-visualpart-img-description">
+                                    <h6 class="tab-visualpart-img-header">Type a Title</h6>
+                                    <p class="tab-visualpart-img-content">Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet magna.</p>
                                 </div>
                             </div>
+
+                            <div class="tab-visualpart-container">
+                                <div class="tab-visualpart-img"><img src="img/parus.jpg" alt="boat"/></div>
+                                <div class="tab-visualpart-img-description">
+                                    <h6 class="tab-visualpart-img-header">Type a Title</h6>
+                                    <p class="tab-visualpart-img-content">Donec id elit non mi porta gravida at eget metus.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </li>
 
@@ -156,7 +168,7 @@
     </div>
 
     <!-- FOOTER -->
-    <div class="footer clearfix">
+     <div class="footer clearfix">
         <div class="footer-subcontainer single-menu-title">
             <h6 class="single-menu-title-header">Single menu title</h6>
             <ul class="single-menu-title-list">
