@@ -13,6 +13,7 @@ menu, nav, section {
     padding: 0;
     border: 0;
     vertical-align: baseline;
+    box-sizing: border-box;
 }
 ol, ul {
     list-style: none;
@@ -22,7 +23,7 @@ ol, ul {
 
 
 body {
-    background-color: #f6f6f6;
+    background: url("../img/bg.png") repeat;
 }
 
 .wrapper {
@@ -104,7 +105,7 @@ body {
 
 .menu li a {
     text-decoration: none;
-    font: 14px Oxygen, serif;
+    font: 14px "Oxygen", serif;
     color: #666;
 
 }
@@ -115,7 +116,6 @@ body {
 
 .submenu {
     display: none;
-    box-sizing: border-box;
     width: 165px;
     margin-left: -15px;
     margin-top: 5px;
@@ -156,7 +156,7 @@ body {
     position: relative;
     display: block;
     padding: 10px 0 10px 5px;
-    font: 14px Oxygen, sans-serif;
+    font: 14px "Oxygen", sans-serif;
     color: #8c8c8c;
     border-top: 1px solid #ddd;
 }
@@ -169,12 +169,11 @@ body {
     border-radius: 3px;
 }
 
-.submenu-item1:after {
-    content: "this text is complementary";
+.submenu-item1-subtext {
     display: block;
     position: absolute;
-    top: 30px;
-    left: 11px;
+    top: 25px;
+    left: 6px;
     font: 10px Arial, sans-serif;
     color: #aaa;
 }
@@ -194,12 +193,12 @@ li.submenu-item1 a {
     position: absolute;
     bottom: 15px;
     left: 820px;
-    width: 75px;
+    width: 90px;
     padding: 5px 10px 8px;
     margin-right: 90px;
     background-color: #ffc451;
     color: #fff;
-    font: 14px Oxygen, serif;
+    font: 14px "Oxygen", serif;
     box-shadow: 0 1px 1px #eaeaea;
     text-decoration: none;
     -webkit-border-radius:4px;
@@ -225,8 +224,8 @@ li.submenu-item1 a {
 }
 
 .preview-image-container {
-    width: 290px;
-    height: 188px;
+    width: 300px;
+    height: 198px;
     padding: 4px;
     background-color: #fff;
     border: 1px solid #e5e5e5;
@@ -236,7 +235,7 @@ li.submenu-item1 a {
 .preview-image-slider-text {
     position: absolute;
     bottom: 10px;
-    left: 45px;
+    left: 50px;
     width: 200px;
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.6);
@@ -250,7 +249,7 @@ li.submenu-item1 a {
     display: inline-block;
     position: absolute;
     top: 0;
-    left: 214px;
+    left: 205px;
     background: url("../img/slider_right.png");
     width: 30px;
     height: 46px;
@@ -261,7 +260,7 @@ li.submenu-item1 a {
     display: inline-block;
     position: absolute;
     top: 0;
-    right: 213px;
+    right: 205px;
     background: url("../img/slider_left.png");
     width: 30px;
     height: 46px;
@@ -291,14 +290,14 @@ li.submenu-item1 a {
 }
 
 .preview-info-name {
-    font: bold 38px Oxygen, sans-serif;
+    font: bold 38px "Oxygen", sans-serif;
     color: #515151;
     margin-top: 25px;
     margin-bottom: 8px;
 }
 
 .preview-info-about {
-    font: 14px Oxygen, sans-serif;
+    font: 14px "Oxygen", sans-serif;
     color: #666;
     margin-bottom: 20px;
 }
@@ -368,7 +367,7 @@ li.submenu-item1 a {
 .button-text {
     position: absolute;
     margin: 5px;
-    font: 17px Oxygen, sans-serif;
+    font: 17px "Oxygen", sans-serif;
 }
 
 .button-hover {
@@ -419,7 +418,7 @@ li.submenu-item1 a {
     margin: 20px 0;
     border-top: 1px solid #e5e5e5;
     padding-top: 25px;
-    font: 18px Oxygen, sans-serif;
+    font: 18px "Oxygen", sans-serif;
     color: #222;
 }
 
@@ -508,7 +507,7 @@ li.submenu-item1 a {
 }
 .content-image-header {
     padding: 10px;
-    font: 14px Oxygen, sans-serif;
+    font: 14px "Oxygen", sans-serif;
     color: #666;
 }
 .content-image-text {
@@ -539,7 +538,7 @@ li.submenu-item1 a {
 
 .content-in-line-header {
     margin: 20px 0;
-    font: 18px Oxygen, sans-serif;
+    font: 18px "Oxygen", sans-serif;
     color: #222;
 }
 
@@ -605,8 +604,8 @@ li.tab-list_item:before {
 .tab-visualpart-img {
     display: inline-block;
     position: relative;
-    width: 116px;
-    height: 95px;
+    width: 122px;
+    height: 99px;
     padding: 2px 2px 0;
     background-color: #fff;
     border: 1px solid #f1f1f1;
@@ -615,13 +614,14 @@ li.tab-list_item:before {
 .tab-visualpart-container {
     display: inline-block;
     width: 282px;
-    padding-right: 15px;
+    margin-right: 20px;
 }
+
 
 
 .tab-visualpart-img-description  {
     float: right;
-    width: 155px;
+    width: 150px;
 }
 
 div.tab-visualpart-img-description p,h6 {
