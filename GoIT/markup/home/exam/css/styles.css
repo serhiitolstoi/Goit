@@ -26,11 +26,35 @@ body {
 }
 
 .wrapper {
+    position: relative;
     width: 975px;
+    height: 1540px;
     margin: 60px auto;
     background-color: #fff;
     border: 1px solid #ebebeb;
     box-shadow: 0 5px 20px #666;
+}
+
+.wrapper:before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 1532px;
+    width: 975px;
+    height: 5px;
+    border-bottom: 1px solid #ebebeb;
+    border-radius: 2px;
+}
+
+.wrapper:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 1529px;
+    width: 975px;
+    height: 5px;
+    border-bottom: 1px solid #ebebeb;
+    border-radius: 2px;
 }
 
 .clearfix:after {
@@ -279,7 +303,7 @@ li.submenu-item1 a {
     margin-bottom: 20px;
 }
 
-.preview-info .button {
+.button {
     position: relative;
     float: right;
     width: 170px;
@@ -294,7 +318,7 @@ li.submenu-item1 a {
     box-shadow: 0 1px 1px #eaeaea;
 }
 
-.preview-info .button:after {
+.button:after {
     content: '';
     display: block;
     position: absolute;
@@ -305,7 +329,19 @@ li.submenu-item1 a {
     height: 19px;
 }
 
-.preview-info .button p:after {
+
+.button:before {
+    content: '';
+    display: none;
+    position: absolute;
+    top: 12px;
+    right:205px;
+    background: url("../img/arrow-to-left.png") no-repeat;
+    width: 12px;
+    height: 19px;
+}
+
+.button-text:after {
     content: '';
     display: block;
     position: absolute;
@@ -315,16 +351,50 @@ li.submenu-item1 a {
     border: 1px solid #ffc75e;
 }
 
-.preview-info .button:hover {
+.button:hover {
     cursor: pointer;
     background-color: #f8a441;
 }
 
-.preview-info .button p {
+.button:hover .button-hover  {
+    display: block;
+}
+
+.button:hover:before {
+    display: block;
+}
+
+
+.button-text {
     position: absolute;
     margin: 5px;
     font: 17px Oxygen, sans-serif;
 }
+
+.button-hover {
+    display: none;
+    position: absolute;
+    top:0;
+    left: -45px;
+    width: 230px;
+    padding: 60px 0 20px;
+    text-transform: uppercase;
+    font: 10px Arial, sans-serif;
+    color: #afceb4;
+}
+
+.button-hover a {
+    text-transform: uppercase;
+    font: 10px Arial, sans-serif;
+    color: #afceb4;
+}
+
+.button-hover a:hover {
+    text-decoration: none;
+    color: #ffad19;
+}
+
+
 
 .btn-video-quality {
     display: block;
@@ -332,7 +402,6 @@ li.submenu-item1 a {
     font: bold 10px Arial, sans-serif;
     color: #d28600;
     text-shadow: 0 0 1px #fff;
-
 }
 
 
