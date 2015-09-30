@@ -528,7 +528,7 @@ li.submenu-item1 a {
 .content-in-line {
     position: relative;
     width: 930px;
-    margin: 0 auto;
+    margin: 0 auto 30px;
 }
 
 .content-in-line-header {
