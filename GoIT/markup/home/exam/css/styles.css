@@ -29,7 +29,6 @@ body {
 .wrapper {
     position: relative;
     width: 975px;
-    height: 1540px;
     margin: 60px auto;
     background-color: #fff;
     border: 1px solid #ebebeb;
@@ -40,7 +39,7 @@ body {
     content: "";
     position: absolute;
     display: block;
-    top: 1532px;
+    bottom: 2px;
     width: 975px;
     height: 5px;
     border-bottom: 1px solid #ebebeb;
@@ -51,7 +50,7 @@ body {
     content: "";
     position: absolute;
     display: block;
-    top: 1529px;
+    bottom: 4px;
     width: 975px;
     height: 5px;
     border-bottom: 1px solid #ebebeb;
@@ -214,9 +213,8 @@ li.submenu-item1 a {
 
 .preview {
     position: relative;
-    top: 70px;
     width: 805px;
-    margin: 0 auto;
+    margin: 70px auto;
 }
 
 .preview-image {
@@ -408,8 +406,7 @@ li.submenu-item1 a {
 /** CONTENT **/
 .content {
     position: relative;
-    top:125px;
-    width: 930px;
+    width: 932px;
     margin: 0 auto;
 }
 
@@ -530,9 +527,7 @@ li.submenu-item1 a {
 /** CONTENT_IN_LINE **/
 .content-in-line {
     position: relative;
-    top: 150px;
     width: 930px;
-    height: 500px;
     margin: 0 auto;
 }
 
@@ -544,15 +539,13 @@ li.submenu-item1 a {
 
 .tabs-container {
     position: relative;
-    height: 250px;
     border-radius: 5px;
     border: 1px solid #e5e5e5;
     background-color: #fff;
 }
 
 .tabs > div {
-    position: absolute;
-    top: 60px;
+    position: relative;
 }
 
 .tab-header {
@@ -562,6 +555,11 @@ li.submenu-item1 a {
     margin: 10px 20px;
     padding-bottom: 10px;
     border-bottom: 1px solid #e5e5e5;
+}
+
+.tab-list {
+    display: inline-block;
+    width: 300px;
 }
 
 li.tab-list_item {
@@ -596,11 +594,11 @@ li.tab-list_item:before {
 }
 
 .tab-visualpart {
-    position: absolute;
-    top:55px;
-    left:335px;
-    width: 625px;
+    display: inline-block;
+    width: 600px;
+    vertical-align: top;
 }
+
 .tab-visualpart-img {
     display: inline-block;
     position: relative;
@@ -614,8 +612,12 @@ li.tab-list_item:before {
 .tab-visualpart-container {
     display: inline-block;
     width: 282px;
-    margin-right: 20px;
 }
+
+.tab-visualpart-container:first-child {
+    margin-right: 20px; 
+}
+
 
 
 
@@ -642,7 +644,7 @@ div.tab-visualpart-img-description h6 {
 
 .tabs label {
     position: relative;
-    top: 14px;
+    display: inline-block;
     padding: 15px 10px;
     border-right: 1px solid #ececec;
     border-bottom: 1px solid #ececec;
@@ -679,7 +681,6 @@ div.tab-visualpart-img-description h6 {
 .footer {
     position: relative;
     width: 930px;
-    top: -25px;
     margin: 0 auto;
     border-top: 1px solid #e5e5e5;
 }
