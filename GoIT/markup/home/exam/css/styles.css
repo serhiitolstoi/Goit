@@ -681,7 +681,7 @@ div.tab-visualpart-img-description h6 {
 .footer {
     position: relative;
     width: 930px;
-    margin: 0 auto;
+    margin: 0 auto 20px;
     border-top: 1px solid #e5e5e5;
 }
 .footer-subcontainer {
