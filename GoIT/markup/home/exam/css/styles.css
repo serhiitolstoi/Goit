@@ -250,7 +250,7 @@ li.submenu-item1 a {
     left: 205px;
     background: url("../img/slider_right.png");
     width: 30px;
-    height: 46px;
+    height: 50px;
 }
 
 .preview-image-slider-text:before {
@@ -261,7 +261,7 @@ li.submenu-item1 a {
     right: 205px;
     background: url("../img/slider_left.png");
     width: 30px;
-    height: 46px;
+    height: 50px;
 }
 
 .preview-image-name {
